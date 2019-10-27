@@ -4,7 +4,7 @@ Ares é um RAT (Remote Access Tool) escrito em Python.
 
 __ADVERTÊNCIA: Utilize este software apenas de acordo com a legislação atual. O uso indevido deste software pode suscitar questões legais e éticas pelas quais não apoio e nem me responsabilizo .__
 
-Ares foi desenvolvido em cima de duas aplicações princiapais:
+Ares foi desenvolvido em cima de duas aplicações principais:
 
 - Um servidor C2 com interface web para gerência e administração dos agentes
 - Um programa agente (agent), que é executado no host comprometido, e garante a comunicação com o C2
