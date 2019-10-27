@@ -1,32 +1,32 @@
 # Ares
 
-Ares is a Python Remote Access Tool.
+Ares é um RAT (Remote Access Tool) escrito em Python.
 
-__Warning: Only use this software according to your current legislation. Misuse of this software can raise legal and ethical issues which I don't support nor can be held responsible for.__
+__ADVERTÊNCIA: Utilize este software apenas de acordo com a legislação atual. O uso indevido deste software pode suscitar questões legais e éticas pelas quais não apoio e nem me responsabilizo .__
 
-Ares is made of two main programs:
+Ares foi desenvolvido em cima de duas aplicações princiapais:
 
-- A Command aNd Control server, which is a Web interface to administer the agents
-- An agent program, which is run on the compromised host, and ensures communication with the CNC
+- Um servidor C2 com interface web para gerência e administração dos agentes
+- Um programa agente (agent), que é executado no host comprometido, e garante a comunicação com o C2
 
-The Web interface can be run on any server running Python. The agent can be compiled to native executables using **pyinstaller**.
+A interface da Web pode ser executada em qualquer servidor executando o Python. O agente pode ser compilado em executáveis nativos usando o ** pyinstaller **.
 
 ## Setup
 
-Install the Python requirements:
+Instalando as dependências:
 
 ```
 pip install -r requirements.txt
 ```
 
-Initialize the database:
+Inicializando a base de dados:
 
 ```
 cd server
 ./ares.py initdb
 ```
 
-In order to compile Windows agents on Linux, setup wine (optional):
+Se quiser compilar executáveis para Windows, rode as configurações do Wine (opcional):
 
 ```
 ./wine_setup.sh
@@ -34,37 +34,37 @@ In order to compile Windows agents on Linux, setup wine (optional):
 
 ## Server
 
-Run with the builtin (debug) server:
+Rode o webserver em python (suporta nodo debbuging):
 
 ```
 ./ares.py runserver -h 0.0.0.0 -p 8080 --threaded
 ```
 
-Or run using gunicorn:
+Ou rode usando gunicorn:
 
 ```
 gunicorn ares:app -b 0.0.0.0:8080 --threads 20
 ```
 
-The server should now be accessible on http://localhost:8080
+Seu servidor estará acessível em http://localhost:8080
 
 ## Agent
 
-Run the Python agent (update config.py to suit your needs):
+Rode o agente em python (altere as opções do config.py para adaptar ao seu cenário):
 
 ```
 cd agent
 ./agent.py
 ```
 
-Build a new agent to a standalone binary:
+Construa um binário standalone:
 
 ```
 ./builder.py -p Linux --server http://localhost:8080 -o agent
 ./agent
 ``` 
 
-To see a list of supported options, run ./builder.py -h
+Para ver uma lista de opções suportadas, rode ./builder.py -h
 
 ```
 ./agent/builder.py -h
@@ -99,32 +99,32 @@ optional arguments:
 
 ```
 <any shell command>
-Executes the command in a shell and return its output.
+Executa o comando em um shell e retorna sua saída.
 
 upload <local_file>
-Uploads <local_file> to server.
+Faz uploads <local_file> para o servidor.
 
 download <url> <destination>
-Downloads a file through HTTP(S).
+Faz o downloads de um arquivo usando HTTP(S).
 
 zip <archive_name> <folder>
-Creates a zip archive of the folder.
+Cria um arquivo zip no diretório especificado.
 
 screenshot
-Takes a screenshot.
+Tira um screenshot.
 
 python <command|file>
-Runs a Python command or local file.
+Executa um comando Python ou um arquivo local.
 
 persist
-Installs the agent.
+Instala o agente (persistência).
 
 clean
-Uninstalls the agent.
+Desistala o agente.
 
 exit
-Kills the agent.
+Mata o processo do agente.
 
 help
-This help.
+Exibe este help.
 ```
