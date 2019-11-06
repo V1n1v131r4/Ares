@@ -32,8 +32,8 @@
     <a href="{{ previous_page }}">&lt;&lt; Back</a>
     {% endif %}
     {% if session.username %}
-    <h3 style="text-align: right">Logged in as {{ session.username }}</h3>
-    <h2 style="text-align: right"><a href="{{ url_for('webui.change_password') }}">Change Password</a>  <a href="{{ url_for('webui.logout') }}">Disconnect</a></h2>
+    <h3 style="text-align: right">Logged as {{ session.username }}</h3>
+    <h2 style="text-align: right"><a href="{{ url_for('webui.change_password') }}">Change Password</a>  <a href="{{ url_for('webui.logout') }}">Quit</a></h2>
     {% endif %}
    </div>
 </header>
