@@ -1,3 +1,5 @@
+![image](https://small.pngfans.com/20190413/xr/ares-gaming-logo-png-video-games-ares-clipart-f1f07afde6f7f9fc.jpg)
+
 # Ares
 
 Ares é uma botnet do tipo RAT (Remote Access Tool) escrita em Python.
