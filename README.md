@@ -33,6 +33,7 @@ cd server
 Se quiser compilar executáveis para Windows, rode as configurações do Wine (opcional):
 
 ```
+cd ..
 ./wine_setup.sh
 ```
 
