@@ -18,6 +18,8 @@ A interface da Web pode ser executada em qualquer servidor executando o Python. 
 Instalando as dependências:
 
 ```
+apt install python-pip -y
+cd Ares
 pip install -r requirements.txt
 ```
 
