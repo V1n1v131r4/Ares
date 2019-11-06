@@ -8,7 +8,7 @@ __ADVERTÊNCIA: Utilize este software apenas de acordo com a legislação atual.
 
 Ares foi desenvolvido em cima de duas aplicações principais:
 
-- Um servidor C2 com interface web para gerência e administração dos agentes
+- Um servidor C2 com interface web para gerência e administração dos agentes (bot master and C²)
 - Um programa agente (agent), que é executado no host comprometido, e garante a comunicação com o C2
 
 A interface da Web pode ser executada em qualquer servidor executando o Python. O agente pode ser compilado em executáveis nativos usando o ** pyinstaller **.
