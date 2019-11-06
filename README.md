@@ -1,6 +1,6 @@
 # Ares
 
-Ares é um RAT (Remote Access Tool) escrito em Python.
+Ares é uma botnet do tipo RAT (Remote Access Tool) escrita em Python.
 
 __ADVERTÊNCIA: Utilize este software apenas de acordo com a legislação atual. O uso indevido deste software pode suscitar questões legais e éticas pelas quais não apoio e nem me responsabilizo .__
 
