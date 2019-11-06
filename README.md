@@ -1,4 +1,4 @@
-![image](https://small.pngfans.com/20190413/xr/ares-gaming-logo-png-video-games-ares-clipart-f1f07afde6f7f9fc.jpg)
+![image](https://cdn.freebiesupply.com/logos/thumbs/2x/ares-01-logo.png)
 
 # Ares
 
