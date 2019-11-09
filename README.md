@@ -19,6 +19,7 @@ Instalando as dependências:
 
 ```
 apt install python-pip -y
+git clone https://github.com/vinicius3cta/Ares.git
 cd Ares
 pip install -r requirements.txt
 ```
